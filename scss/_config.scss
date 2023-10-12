@@ -1,0 +1,32 @@
+$font-stack: Arial, Helvetica, sans-serif;
+$light-color: #f4f4f4;
+$primary-color: #0e6cff;
+// $primary-color: white;
+$secondary-color: orange;
+$color-morning: #e3bb88;
+$color-day: #d89864;
+$color-evening: #b1695a;
+$color-night: #644749;
+$color-gradient1: rgba(18,159,241,1);
+$color-gradient2:rgba(52,244,249,1);
+$color-card: #222;
+$dark-color:#2222;
+
+
+
+// set the text color based on background color
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+
+// set the background and text color
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
