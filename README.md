@@ -40,5 +40,5 @@
 - Mixins : Implemented Mixins at _config.scss  to set background color for the page.
 - Functions : Implemented the @function to set text color of the page.
 - Extra features - 1. Calc : Implemented in the scss files to calcualte the margin based on the em values.
-                    2. @extend : Implemented in buttons for the flex layout page to mimic the type of buttons in the pages.
-                    3.Operators : Implmented the * (multiply) or / (divide) operators to calcualte the height or width of certain properties of cards and the body. 
+                  2. @extend : Implemented in buttons for the flex layout page to mimic the type of buttons in the pages.
+                  3.Operators : Implmented the * (multiply) or / (divide) operators to calcualte the height or width of certain properties of cards and the body. 
