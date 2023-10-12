@@ -6,6 +6,7 @@
 @import 'buttons';
 @import 'mobile';
 // @import 'cards';
+@import 'footer';
 
 * {
     box-sizing: border-box;
@@ -48,9 +49,9 @@ body {
         align-items: center;
         justify-content: center;
 
-        img {
-            width: 50%;
-        }
+        // #{$image} {
+        //     width: 50%;
+        // }
 
         h1 {
             font-size: 42px;
@@ -66,7 +67,7 @@ body {
 
 
 
-img {
+#{$image} {
     width: 100px;
     height: fit-content;
     margin-top: 30px;
@@ -245,7 +246,15 @@ grid-template-columns: repeat(3, 1fr);
 
 }
 
+.btm{
+  background-color: $footer-color;
+  color: $light-color;
+  display: grid;
+  text-align: center;
+  padding: $margin;
+  // justify-content: space-between;
+  a:link{
+    color: $color-day;
 
-
-
- 
+  }
+}

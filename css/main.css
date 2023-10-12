@@ -105,9 +105,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-.showcase-content img {
-  width: 50%;
-}
 .showcase-content h1 {
   font-size: 42px;
   line-height: 1.2;
@@ -260,4 +257,15 @@ label:hover {
   padding: 20px;
   border-radius: 20px;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.btm {
+  background-color: #0c1b33;
+  color: #f4f4f4;
+  display: grid;
+  text-align: center;
+  padding: 2em;
+}
+.btm a:link {
+  color: #d89864;
 }
