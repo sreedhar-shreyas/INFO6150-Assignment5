@@ -1,0 +1,40 @@
+body {
+  background-color: #fff;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card2 {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.insidecard {
+  top: 20%;
+  background-color: #0984e3;
+  background: rgb(18, 159, 241);
+  background: linear-gradient(180deg, rgb(18, 159, 241) 24%, rgb(52, 244, 249) 100%);
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 60px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 23px;
+  height: 30px;
+  margin-top: 30px;
+}
