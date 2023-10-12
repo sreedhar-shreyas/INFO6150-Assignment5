@@ -24,9 +24,11 @@ function test(){
 
 var insidediv = "";
 var yo = " temoppp";
+var hum = "Humidity:"
+var win = "WindSpeed: "
 for (var i = 0; i < 9; i++) {
    // insidediv += '<div class="city'+i+'">City:</div> <div class="temp'+i+'">temp</div> <div class="humidity'+i+'">Humidity</div> <div class="wind'+i+'">wind</div>';
-   insidediv += '<div class="insidecard"> <img src="" class="weather-icon'+i+'"/> <h1 class="temp'+i+'">test'+yo+'</h1><h2 class="city'+i+'">test</h2><p class="humidity'+i+'">test</p><p class="wind'+i+'">test</p>  <p class="weather-condition'+i+'"></p> </div>';
+   insidediv += '<div class="insidecard"> <img src="" class="weather-icon'+i+'"/> <h1 class="temp'+i+'">test</h1><h2 class="city'+i+'">test</h2><p class="humidity'+i+'">test</p><p class="wind'+i+'">test</p>  <p class="weather-condition'+i+'"></p> </div>';
 }
 var container = document.getElementById("container");
 container.innerHTML = insidediv;
@@ -64,40 +66,39 @@ console.log("weater"+weatherConditionData);
 
         switch (weatherConditionData) {
             case 'Clouds':
-               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/CarolCosta9/img/main/weather%20card%20img/clouds.png";
-                break;
+               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/sreedhar-shreyas/INFO6150-Assignment5/main/images/Clouds.png";
             case 'Tornado':
-               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/CarolCosta9/img/main/weather%20card%20img/Tornado.png";
+               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/sreedhar-shreyas/INFO6150-Assignment5/main/images/Clouds.png";
                 break;
             case 'Rain':
-               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/CarolCosta9/img/main/weather%20card%20img/rain.png";
+               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/sreedhar-shreyas/INFO6150-Assignment5/main/images/Rain.png";
                 break;
             case 'Drizzle':
-               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/CarolCosta9/img/main/weather%20card%20img/drizzle.png";
+               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/sreedhar-shreyas/INFO6150-Assignment5/main/images/Rain.png";
                 break;
             case 'Clear':
-               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/CarolCosta9/img/main/weather%20card%20img/clear.png";
+               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/sreedhar-shreyas/INFO6150-Assignment5/main/images/Sun.png";
                 break;
             case 'Thunderstorm':
-               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/CarolCosta9/img/main/weather%20card%20img/thunderstorm.png";
+               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/sreedhar-shreyas/INFO6150-Assignment5/main/images/Thunderstorm.png";
                 break;
             case 'Snow':
-               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/CarolCosta9/img/main/weather%20card%20img/snow.png";
+               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/sreedhar-shreyas/INFO6150-Assignment5/main/images/Snow.png";
                 break;
             case 'Mist':
             case 'Fog':
             case 'Smoke':
             case 'haze':
-               document.querySelector(".weather-icon"+i).src = '../images';
+               document.querySelector(".weather-icon"+i).src = 'https://raw.githubusercontent.com/sreedhar-shreyas/INFO6150-Assignment5/main/images/Mist.png';
                 break;
             default:
-               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/CarolCosta9/img/main/weather%20card%20img/other.png";
+               document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/sreedhar-shreyas/INFO6150-Assignment5/main/images/Clouds.png";
         }
 }
 }
 Dateandtime();
 test();
-// checkWeather();
+checkWeather();
 
 // async function checkWeather(cities){
 //     let i = 1;
