@@ -88,7 +88,7 @@ console.log("weater"+weatherConditionData);
             case 'Fog':
             case 'Smoke':
             case 'haze':
-               document.querySelector(".weather-icon"+i).src = "https://docs.github.com/assets/cb-68457/mw-1440/images/help/repository/rendered-code-snippet.webp";
+               document.querySelector(".weather-icon"+i).src = '../images';
                 break;
             default:
                document.querySelector(".weather-icon"+i).src = "https://raw.githubusercontent.com/CarolCosta9/img/main/weather%20card%20img/other.png";
