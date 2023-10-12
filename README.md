@@ -22,6 +22,7 @@
    </br>
  Grid 1 implemented in the flex-layout.html file and 
 </details>
+<details>
  <summary> Flex Grid layout - 2</summary> 
 
   ![](./images/readme-images/Readme_flex2.png)
